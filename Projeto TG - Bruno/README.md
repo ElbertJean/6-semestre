@@ -184,6 +184,146 @@ Também desenvolvi mais minha **colaboração em equipe**, já que muitas das fu
 
 Foi um semestre importante para desenvolver **resiliência**, **responsabilidade com entregas** e maior segurança para enfrentar tecnologias desconhecidas. Mais do que aprender Java ou banco de dados relacional, comecei a entender na prática que desenvolver software também envolve saber lidar com incerteza, dependências entre pessoas e pressão de prazo.
 
+---
+
+## :heavy_check_mark: 3º Semestre - 2024-2
+
+### Parceiro Acadêmico
+[GSW](http://www.gsw.com.br)
+
+No terceiro semestre, o projeto foi desenvolvido em parceria com a GSW, empresa nacional especializada em soluções para gerenciamento e controle de processos e negócios. O desafio proposto consistia na criação de uma aplicação capaz de realizar a captura automatizada de notícias e informações estratégicas provenientes de diferentes fontes, armazenando esses dados de forma estruturada para consultas e análises posteriores.
+
+Com o [Morpheus](https://github.com/Morpheus-Fatec/morpheus), a equipe desenvolveu uma plataforma web para monitoramento e coleta de informações, utilizando Spring Boot no backend e Vue.js no frontend. O sistema permitia cadastrar diferentes portais de notícias e configurar os seletores utilizados para realizar o web scraping, possibilitando a inclusão de novas fontes diretamente pela aplicação sem necessidade de alterações no código.
+
+A coleta das informações era realizada de forma automatizada e periódica, utilizando agendamentos configuráveis. Além do scraping de páginas web, a aplicação também realizava o consumo de APIs externas e organizava as notícias coletadas de acordo com critérios definidos pelo usuário.
+
+Para tornar a busca das informações mais eficiente, o sistema utilizava tags associadas a sinônimos e regionalismos, ampliando os termos considerados durante a coleta e consulta das notícias. Dessa forma, o projeto possibilitou a construção de um histórico estruturado de informações, preparado para futuras aplicações de análise e inteligência artificial.
+
+<details>
+<summary>Gerenciamento de portais de notícias</summary>
+<img src="./assets/3-semestre/visao_geral.png" alt="Tela de cadastro e mapeamento de portais de notícias do Morpheus">
+<b>Figura 6: Cadastro e configuração do mapeamento de portais de notícias</b>
+</details></br>
+
+<details>
+<summary>Diagrama de entidade e relacionamento Morphues</summary>
+<img src="./assets/3-semestre/DER Morpheus.png" alt="Diagrama de entidade e relacionamento Morpheus">
+<b>Figura 6: Diagrama Conceito do Banco de Dados</b>
+</details>
+
+A busca pelo usuário utiliza filtros dinâmicos compostos por título, conteúdo, autor, portal de origem e período, com resultados paginados.
+
+### Tecnologias Utilizadas
+
+- **Java / Spring Boot:** Utilizados no desenvolvimento do backend, regras de negócio e construção da API da aplicação.
+- **JavaScript / Vue.js / Bootstrap:** Utilizados no desenvolvimento da interface web e interação com os recursos disponibilizados pelo backend.
+- **MySQL / JDBC:** Responsáveis pela persistência dos dados e integração entre a aplicação Java e o banco de dados relacional.
+- **Maven:** Utilizado para gerenciamento das dependências e organização do projeto.
+- **Git / GitHub:** Utilizados para versionamento, colaboração entre os integrantes e organização das entregas.
+- **Discord / Slack / Google Docs:** Utilizados para comunicação, organização da equipe e documentação do projeto.
+
+### Contribuições Pessoais
+
+No terceiro semestre, minha participação no desenvolvimento aumentou significativamente. Durante a primeira sprint, concentrei minha atuação no frontend, sendo responsável pela construção do wireframe da aplicação, definição da arquitetura inicial das interfaces e desenvolvimento de funcionalidades como a tela de notícias. Essa etapa foi importante para estabelecer uma base visual e estrutural que pudesse ser seguida pelo restante da equipe durante o desenvolvimento.
+
+A partir da segunda sprint, passei a concentrar minha atuação principalmente no backend, ficando responsável pelo desenvolvimento do fluxo de web scraping dos portais de notícias. O processo começou com a configuração do Jsoup e testes utilizando portais e seletores previamente definidos, evoluindo posteriormente para uma solução dinâmica, na qual os endereços dos portais, seletores e tags utilizadas na coleta eram recuperados diretamente do banco de dados.
+
+Também trabalhei na filtragem das notícias a partir das tags vinculadas a cada fonte, no tratamento de dados coletados, validações e prevenção de registros duplicados. Esse fluxo foi sendo aprimorado ao longo das sprints até permitir que diferentes portais pudessem ser cadastrados e processados utilizando as configurações armazenadas pela própria aplicação.
+
+Nas etapas finais do projeto, também participei do desenvolvimento do fluxo de coleta de informações provenientes de APIs externas, trabalhando com serviços, DTOs, controllers, relacionamentos com tags, persistência dos conteúdos coletados e execução periódica das coletas. Foi o semestre em que tive meu contato mais aprofundado até então com desenvolvimento backend, trabalhando com Spring Boot em uma aplicação que envolvia integração com banco de dados, processamento automatizado de informações e consumo de fontes externas.
+
+### Hard Skills
+
+- Integração entre Vue.js, Axios e APIs REST: **Sei fazer com autonomia**;
+- Desenvolvimento backend com Java e Spring Boot: **Sei fazer com autonomia**;
+- Estruturação e padronização de rotas e payloads REST: **Sei fazer com autonomia**;
+- Desenvolvimento de web scraping com Jsoup: **Sei fazer com autonomia**;
+- Integração com banco de dados relacional utilizando MySQL e JDBC: **Sei fazer com autonomia**;
+- Consumo e processamento de APIs externas: **Sei fazer com autonomia**;
+- Versionamento e colaboração com Git e GitHub: **Sei fazer com autonomia**.
+
+### Soft Skills
+
+O terceiro semestre foi marcado principalmente pelo aumento da **responsabilidade técnica**. A partir da segunda sprint, fiquei responsável por uma das partes centrais do projeto: o fluxo de web scraping utilizado para coletar e processar as notícias. Isso trouxe uma pressão diferente dos semestres anteriores, pois o funcionamento de grande parte da aplicação dependia diretamente dessa entrega.
+
+Foi necessário desenvolver uma maior capacidade de **lidar com pressão e prazos**, mantendo o foco mesmo diante de uma funcionalidade que ainda envolvia tecnologias e conceitos novos para mim. Nesse processo, precisei aprender rapidamente o funcionamento do Jsoup, compreender suas possibilidades e limitações e transformar esse aprendizado em uma solução funcional dentro do período previsto pelas sprints.
+
+Essa experiência fortaleceu principalmente minha **autonomia**, **resolução de problemas** e **aprendizado contínuo**. Em vez de esperar dominar completamente uma tecnologia antes de utilizá-la, aprendi a pesquisar, testar alternativas, identificar erros e evoluir a implementação conforme o projeto avançava.
+
+Também desenvolvi um senso maior de **comprometimento com a entrega coletiva**, pois percebi de forma mais clara que uma responsabilidade individual poderia impactar diretamente todo o restante da equipe. Foi um semestre importante para aprender a assumir funcionalidades críticas, lidar com a pressão associada a elas e confiar mais na minha capacidade de aprender novas tecnologias em pouco tempo.
+
+---
+
+## :heavy_check_mark: 4º Semestre - 2025-1
+
+### Parceiro Acadêmico
+[Visiona Tecnologia Espacial](https://www.visionaespacial.com.br/)
+
+No quarto semestre, o projeto foi desenvolvido em parceria com a Visiona Tecnologia Espacial, empresa brasileira atuante no setor espacial e em soluções relacionadas à observação da Terra. O desafio proposto consistia no desenvolvimento de uma aplicação web voltada à edição, visualização e análise de dados geoespaciais aplicados ao contexto agrícola.
+
+Com o [Demeter](https://github.com/Morpheus-Fatec/API_4S_Visiona_PolygonEditor), a equipe desenvolveu uma plataforma capaz de receber arquivos GeoJSON contendo polígonos classificados automaticamente por modelos de inteligência artificial, permitindo que esses dados fossem visualizados, analisados e editados pelos usuários.
+
+Durante o processamento, as geometrias eram validadas e convertidas para o formato MultiPolygon antes de serem persistidas em um banco de dados PostgreSQL utilizando a extensão PostGIS e o sistema de referência espacial SRID 4326. A aplicação também disponibilizava recursos de análise e dashboards, possibilitando o acompanhamento das informações geoespaciais e contribuindo para o processo de validação e melhoria dos modelos de classificação utilizados pela empresa.
+
+<details>
+<summary>Diagrama de Entidades e Relacionacionamentos</summary>
+<img src="./assets/4-semestre/DER Demeter.png" alt="Ciclo de validação Talhão.">
+<b>Figura 8: Diagrama de Entidades e Relacionacionamentos</b>
+</details>
+<br>
+
+O sistema foi estruturado para atender diferentes perfis de usuário ao longo do processo de validação dos dados. O analista era responsável pela edição manual das classificações diretamente sobre o mapa, enquanto o consultor realizava a revisão desse trabalho, podendo adicionar comentários georreferenciados e aprovar ou rejeitar os talhões analisados.
+
+Além da edição manual, a aplicação também realizava comparações espaciais entre as classificações geradas automaticamente e aquelas ajustadas pelos usuários. A partir dessas operações, o sistema identificava divergências como falsos positivos e falsos negativos, disponibilizando essas regiões em camadas GeoJSON separadas para facilitar a análise e apoiar o aprimoramento dos modelos de classificação.
+
+<details>
+<summary>Ciclo de validação Talhão</summary>
+<img src="./assets/4-semestre/Ciclo de validação Talhão.png" alt="Ciclo de validação Talhão.">
+<b>Figura 9: Ciclo de validação Talhão</b>
+</details>
+<br>
+
+Os talhões aprovados podiam ser exportados em formato GeoJSON para posterior reintegração ao pipeline de inteligência artificial da Visiona, enquanto os dashboards analíticos reuniam métricas de desempenho de analistas e consultores, permitindo comparar a produtividade individual com a média da equipe e acompanhar a evolução mensal das áreas classificadas e revisadas no sistema.
+
+### Tecnologias Utilizadas
+
+- **Java / Spring Boot:** Utilizados no desenvolvimento do backend, regras de negócio, processamento das geometrias e construção das APIs REST.
+- **PostgreSQL / PostGIS:** Responsáveis pela persistência e manipulação dos dados geoespaciais, incluindo consultas e operações espaciais.
+- **JTS Topology Suite:** Utilizada para manipulação, validação e conversão das geometrias entre GeoJSON e MultiPolygon.
+- **JavaScript / Vue.js:** Utilizados no desenvolvimento da interface web e integração com os serviços do backend.
+- **Leaflet:** Biblioteca utilizada para visualização e edição dos polígonos em mapas interativos.
+- **Pinia:** Utilizado para gerenciamento do estado da aplicação no frontend.
+- **AWS:** Utilizada para disponibilização da aplicação em ambiente de produção.
+- **Git / GitHub:** Utilizados para versionamento do código e colaboração entre os integrantes da equipe.
+
+### Contribuições Pessoais
+
+No quarto semestre, concentrei minha atuação principalmente no frontend e participei desde a concepção inicial da aplicação. Na primeira sprint, fui responsável pela elaboração do wireframe do projeto e pela definição da estrutura inicial do frontend, organizando a base da aplicação, seus layouts, rotas e componentes. Também participei da construção das primeiras telas, incluindo o login e a visualização inicial das áreas no mapa. O histórico do projeto registra minha atuação na configuração do template e, posteriormente, no desenvolvimento da lógica do mapa utilizando Vue.js, Leaflet e gerenciamento de estado com Pinia.
+
+Com a evolução das sprints, passei a desenvolver boa parte das funcionalidades geoespaciais do frontend. Trabalhei na visualização e seleção das glebas, centralização das áreas no mapa, exibição de informações em sidebars, agrupamento de elementos com MarkerCluster e integração do mapa com os dados fornecidos pelo backend utilizando Axios. Também implementei o carregamento de imagens GeoTIFF sobre as áreas correspondentes e controles para ativação e desativação das glebas durante a análise.
+
+Uma das partes mais complexas da minha atuação foi o desenvolvimento da tela de detalhamento e classificação dos talhões. Implementei o fluxo para desenhar manualmente novos polígonos sobre o mapa, além das funcionalidades de edição e exclusão dessas geometrias, controles e validações necessários para realizar a classificação manual e integração desses dados com o restante da aplicação. O fluxo foi evoluindo até contemplar também a avaliação das classificações, aprovação ou rejeição das análises e edição das informações dos talhões.
+
+Também participei da integração final dessas funcionalidades com o backend e implementei o fluxo para disponibilizar o download dos talhões aprovados. Esse semestre ampliou significativamente minha experiência com desenvolvimento frontend, pois além da construção das interfaces precisei lidar com dados geoespaciais, diferentes tipos de geometria, imagens raster, estados complexos da aplicação e diversas regras de negócio diretamente relacionadas à interação do usuário com o mapa.
+
+### Hard Skills
+
+- Desenvolvimento frontend com Vue.js e Leaflet: **Sei fazer com autonomia**;
+- Manipulação e visualização de dados geoespaciais com GeoJSON e GeoTIFF: **Sei fazer com autonomia**;
+- Criação, edição e gerenciamento de polígonos em mapas interativos: **Sei fazer com autonomia**;
+- Gerenciamento de estado com Pinia e integração com APIs REST utilizando Axios: **Sei fazer com autonomia**;
+- Manipulação de dados espaciais com PostgreSQL e PostGIS: **Sei fazer com autonomia**;
+- Desenvolvimento de APIs REST com Java e Spring Boot: **Sei fazer com autonomia**;
+- Deploy e utilização de serviços em ambiente AWS: **Sei fazer com autonomia**.
+
+### Soft Skills
+
+O quarto semestre aumentou ainda mais minha **responsabilidade técnica**, pois fiquei responsável por grande parte do fluxo principal do frontend. Uma das tarefas mais críticas foi a renderização e manipulação dos dados geoespaciais no mapa, exigindo atenção não apenas ao funcionamento das funcionalidades, mas também à **performance e otimização** da aplicação para que grandes volumes de informações pudessem ser apresentados sem comprometer a experiência do usuário.
+
+Também fui responsável pelo desenvolvimento do fluxo de desenho e edição de polígonos diretamente sobre o mapa, uma funcionalidade essencial para o objetivo do projeto. Assumir novamente uma parte central da aplicação exigiu **autonomia**, **organização** e **tomada de decisão**, principalmente porque diversas outras funcionalidades dependiam diretamente desse fluxo para serem concluídas.
+
+O desafio técnico e a responsabilidade sobre essas entregas fortaleceram minha capacidade de **resolver problemas**, trabalhar sob **pressão** e avaliar alternativas antes de implementar uma solução. Foi também um semestre importante para amadurecer minha visão sobre desenvolvimento frontend, entendendo que uma funcionalidade não precisa apenas funcionar, mas também ser eficiente, escalável e adequada à experiência de quem utiliza o sistema.
+
 ## Contatos
 * [GitHub](https://github.com/elbertjean)
 * [LinkedIn](https://www.linkedin.com/in/elbertjean)
