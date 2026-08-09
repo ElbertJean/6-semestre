@@ -103,6 +103,87 @@ Por atuar como Product Owner, parte desse desafio passou também pela organizaç
 
 Essa experiência me ensinou que trabalhar em equipe vai muito além de dividir tarefas. Comecei a desenvolver habilidades de **comunicação**, **gestão de conflitos**, **tomada de decisão**, **responsabilidade**, **organização de prazos** e **liderança**, além de entender a importância de estabelecer expectativas claras e acompanhar o comprometimento de cada integrante. Foi também meu primeiro contato com a necessidade de tomar decisões desconfortáveis pensando no resultado coletivo e na continuidade do projeto.
 
+---
+
+## :heavy_check_mark: 2º Semestre - 2024-1
+
+### Parceiro Acadêmico
+[Faculdade de Tecnologia de São José dos Campos - Prof. Jessen Vidal](https://fatecsjc-prd.azurewebsites.net/)
+
+No segundo semestre, novamente em parceria com a Fatec São José dos Campos, foi proposto o desenvolvimento de uma solução para o gerenciamento e análise de dados meteorológicos provenientes de estações localizadas no estado de São Paulo. O desafio estava relacionado à existência de múltiplos arquivos CSV, provenientes de diferentes estações e com diferentes formatos, tornando necessário validar, organizar e armazenar essas informações de maneira estruturada.
+
+A [Equipe Javali](https://github.com/ElbertJean/API-2-semestre) desenvolveu uma aplicação desktop em Java capaz de realizar a leitura e validação desses arquivos, armazenar os registros em um banco de dados relacional e disponibilizar relatórios para análise das variáveis climáticas. O sistema também permitia o gerenciamento de cidades, estações e unidades de medida, além da identificação e tratamento de medições consideradas suspeitas.
+
+Este projeto representou uma evolução importante em relação ao primeiro semestre, principalmente pela introdução da modelagem e persistência em banco de dados relacional. Durante o desenvolvimento, tivemos contato com Java, JDBC, modelagem de entidades e relacionamentos, processamento de arquivos CSV e construção de consultas para geração de relatórios, começando a trabalhar de forma mais estruturada com a relação entre aplicação e banco de dados.
+
+<details>
+<summary>Visão geral da aplicação</summary>
+<img src="./assets/2-semestre/visao_geral.gif" alt="Visão geral da aplicação desenvolvida pela Equipe Javali">
+<b>Figura 5: Visão geral do funcionamento da aplicação</b>
+</details></br>
+
+
+Diferentemente do primeiro semestre, neste projeto a persistência passou a ser realizada em um banco de dados relacional. Para estruturar os dados meteorológicos e seus relacionamentos, foram desenvolvidos os modelos conceitual e lógico do banco de dados, representando entidades como cidades, estações, registros, variáveis climáticas e unidades de medida.
+
+<details>
+<summary>Modelagem de Dados</summary>
+
+<h4>Modelo Conceitual</h4>
+
+<img src="./assets/2-semestre/mer.png" alt="Modelo conceitual do banco de dados">
+
+<b>Figura 5: Modelo Entidade-Relacionamento dos dados meteorológicos</b>
+
+<br><br>
+
+<h4>Modelo Lógico</h4>
+
+<img src="./assets/2-semestre/modeloLogico.png" alt="Modelo lógico do banco de dados">
+
+<b>Figura 6: Modelo lógico do banco de dados da aplicação</b>
+
+</details></br>
+
+A aplicação permite importar e validar arquivos CSV contendo dados meteorológicos, armazenando as informações em um banco de dados relacional. O sistema disponibiliza o gerenciamento de cidades, estações e unidades de medida, além da geração de relatórios das variáveis climáticas e do tratamento de registros considerados suspeitos a partir dos limites configurados para cada medição.
+
+### Tecnologias Utilizadas
+
+- **Java:** Linguagem principal utilizada no desenvolvimento da aplicação, responsável pela implementação das regras de negócio, processamento dos arquivos CSV e comunicação com o banco de dados.
+- **JavaFX:** Framework utilizado para construção da interface gráfica desktop da aplicação, permitindo o desenvolvimento das telas e componentes utilizados pelo usuário.
+- **Scene Builder:** Ferramenta utilizada em conjunto com o JavaFX para criação e organização visual das interfaces da aplicação.
+- **PostgreSQL:** Sistema gerenciador de banco de dados relacional utilizado para persistência dos dados meteorológicos, armazenando informações de cidades, estações, variaveis climáticas, unidades de medida e registros coletados.
+- **JDBC:** Utilizado para realizar a comunicação entre a aplicação Java e o banco de dados PostgreSQL, permitindo consultas, inserções, atualizações e demais operações de persistência.
+- **Maven:** Ferramenta utilizada para gerenciamento das dependências e organização do projeto Java, facilitando a configuração e execução da aplicação.
+- **Docker:** Utilizado para criação e padronização do ambiente necessário para execução dos serviços utilizados pelo projeto, principalmente do banco de dados.
+- **Git / GitHub:** Utilizados para versionamento do código-fonte, organização do repositório e colaboração entre os integrantes da equipe durante as sprints.
+
+### Contribuições Pessoais
+
+Durante o segundo semestre, concentrei minha atuação principalmente no desenvolvimento das interfaces da aplicação e na integração dessas telas com as funcionalidades implementadas em Java. Trabalhei com JavaFX e FXML na construção da tela principal do sistema e de seus fluxos de navegação, conectando as diferentes funcionalidades desenvolvidas pela equipe.
+
+Uma das minhas principais contribuições foi o desenvolvimento do fluxo do relatório BoxPlot. Participei desde a criação das interfaces até a implementação dos controllers responsáveis pela seleção de cidade, estação e período para geração do relatório. Para integrar essa funcionalidade aos dados da aplicação, também implementei consultas ao banco de dados para carregar as cidades cadastradas e suas respectivas estações.
+
+Além disso, contribuí com ajustes no relatório de valor médio e com a integração entre as interfaces e a camada de dados da aplicação. Esse semestre foi meu primeiro contato mais aprofundado com Java, JavaFX, JDBC e banco de dados relacional, exigindo que eu entendesse não apenas como construir uma interface, mas como fazer com que ela consultasse, processasse e apresentasse informações persistidas no PostgreSQL.
+
+### Hard Skills
+
+- Desenvolvimento de aplicações desktop com Java e JavaFX: **Sei fazer com ajuda**;
+- Criação de interfaces com Scene Builder e FXML: **Sei fazer com autonomia**;
+- Integração com banco de dados PostgreSQL utilizando JDBC: **Sei fazer com ajuda**;
+- Operações CRUD e consultas em banco de dados relacional: **Sei fazer com ajuda**;
+- Arquitetura em camadas: **Sei fazer com ajuda**;
+- Metodologia Ágil Scrum: **Sei fazer com ajuda**.
+
+### Soft Skills
+
+O segundo semestre trouxe um tipo de desafio diferente do primeiro, pois foi quando passei a atuar de forma mais direta no desenvolvimento da API. A equipe precisou lidar com uma stack praticamente nova, utilizando Java, JavaFX, JDBC e banco de dados relacional, além de conceitos como CRUD e arquitetura em camadas, que até então ainda não faziam parte da minha experiência.
+
+Esse cenário exigiu bastante **adaptação** e **aprendizado contínuo**, principalmente por precisar absorver novas tecnologias ao mesmo tempo em que as entregas das sprints continuavam acontecendo. Foi necessário aprender a lidar melhor com **prazos**, organizar as atividades e buscar soluções mesmo quando ainda não dominava completamente as ferramentas utilizadas.
+
+Também desenvolvi mais minha **colaboração em equipe**, já que muitas das funcionalidades dependiam diretamente do trabalho de outros integrantes. Construir uma tela, integrar dados e finalizar uma entrega exigia comunicação constante para entender o que já havia sido desenvolvido e como cada parte deveria se conectar.
+
+Foi um semestre importante para desenvolver **resiliência**, **responsabilidade com entregas** e maior segurança para enfrentar tecnologias desconhecidas. Mais do que aprender Java ou banco de dados relacional, comecei a entender na prática que desenvolver software também envolve saber lidar com incerteza, dependências entre pessoas e pressão de prazo.
+
 ## Contatos
 * [GitHub](https://github.com/elbertjean)
 * [LinkedIn](https://www.linkedin.com/in/elbertjean)
