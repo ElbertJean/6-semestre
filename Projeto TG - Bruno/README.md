@@ -1,14 +1,3 @@
-https://github.com/ElbertJean/API-1
-
-https://github.com/ElbertJean/API-2-semestre
-
-https://github.com/ElbertJean/morpheus
-
-https://github.com/ElbertJean/API_4S_Visiona_PolygonEditor
-
-https://github.com/ElbertJean/API-5-Semestre
-
-
 # Elbert Jean dos Santos
 
 ![perfil](https://github.com/elbertjean.png)
@@ -32,7 +21,7 @@ A combinação entre a formação em Banco de Dados e a experiência profissiona
 
 <details>
 <summary>Fatec São José dos Campos - Prof. Jessen Vidal</summary>
-<img src="./images/fatec.png" alt="Fatec São José dos Campos - Prof. Jessen Vidal">
+<img src="./assets/fatec.png" alt="Fatec São José dos Campos - Prof. Jessen Vidal">
 <b>Figura 1: Fachada da Fatec SJC</b>
 </details>
 
@@ -323,6 +312,74 @@ O quarto semestre aumentou ainda mais minha **responsabilidade técnica**, pois 
 Também fui responsável pelo desenvolvimento do fluxo de desenho e edição de polígonos diretamente sobre o mapa, uma funcionalidade essencial para o objetivo do projeto. Assumir novamente uma parte central da aplicação exigiu **autonomia**, **organização** e **tomada de decisão**, principalmente porque diversas outras funcionalidades dependiam diretamente desse fluxo para serem concluídas.
 
 O desafio técnico e a responsabilidade sobre essas entregas fortaleceram minha capacidade de **resolver problemas**, trabalhar sob **pressão** e avaliar alternativas antes de implementar uma solução. Foi também um semestre importante para amadurecer minha visão sobre desenvolvimento frontend, entendendo que uma funcionalidade não precisa apenas funcionar, mas também ser eficiente, escalável e adequada à experiência de quem utiliza o sistema.
+
+---
+
+## :heavy_check_mark: 5º Semestre - 2026-1
+
+### Parceiro Acadêmico
+[SIATT](https://www.siatt.com.br/?lang=pt)
+
+No quinto semestre, o projeto foi desenvolvido em parceria com a SIATT, que apresentou o desafio de criar uma solução capaz de centralizar e organizar dados relacionados aos seus projetos e programas. Essas informações estavam distribuídas entre diferentes sistemas e bases de dados, dificultando a análise consolidada e o acompanhamento das atividades pelos gestores.
+
+Com o [SQLutions](https://github.com/SQLutions-FATEC/API-5-Semestre), a equipe SQLutions desenvolveu uma aplicação web voltada à integração, transformação e visualização desses dados, tendo como pilares os conceitos de Data Warehouse e práticas de DevOps. A solução permitia consolidar informações sobre projetos, custos, horas trabalhadas, materiais, pedidos, estoque e fornecedores em um único ambiente, disponibilizando indicadores e visualizações para apoiar a tomada de decisão.
+
+Os dados eram importados a partir de arquivos CSV e transformados em uma estrutura dimensional composta por fatos e dimensões, permitindo que informações provenientes de diferentes contextos fossem relacionadas e analisadas de maneira padronizada. A aplicação também disponibilizava recursos para acompanhamento de custos dos projetos, fluxo de compras, disponibilidade de materiais, produtividade e desempenho de fornecedores.
+
+Esse semestre marcou meu primeiro contato mais aprofundado tanto com Data Warehouse e modelagem dimensional quanto com práticas de DevOps. Além de trabalhar com tabelas fato e dimensão e processos de ETL para transformação e consolidação dos dados, passamos a enxergar o desenvolvimento para além da implementação do código, considerando também a organização dos serviços, integração entre os diferentes componentes da aplicação, configuração dos ambientes e o processo necessário para disponibilizar uma solução de forma consistente. Essa combinação trouxe uma visão mais próxima do ciclo completo de desenvolvimento e operação de sistemas utilizados em ambientes corporativos.
+
+<details>
+<summary>Data Warehouse</summary>
+<img src="./assets/5-semestre/dw.png" alt="Data Warehouse.">
+<b>Figura 10: Diagrama de Entidade e Relacionamento Data Warehouse</b>
+</details>
+<br>
+
+### Tecnologias Utilizadas
+
+- **Python / Django:** Utilizados no desenvolvimento do backend e construção das APIs da aplicação.
+- **MySQL:** Banco de dados relacional utilizado para persistência dos dados estruturados do sistema.
+- **React / TypeScript:** Utilizados no desenvolvimento da interface web e dos dashboards da aplicação.
+- **Tailwind CSS / Material UI:** Utilizados na construção e padronização visual das interfaces.
+- **Docker / Nginx / Gunicorn:** Utilizados na conteinerização, execução e disponibilização dos serviços da aplicação.
+- **Pytest:** Utilizado para criação e execução de testes automatizados no backend.
+- **Prometheus / Grafana:** Utilizados para monitoramento da aplicação e visualização de métricas.
+- **SonarQube:** Utilizado para análise da qualidade do código.
+- **Git / GitHub:** Utilizados para versionamento, colaboração e organização do desenvolvimento.
+- **Jira / Slack / Figma:** Utilizados para gestão das tarefas, comunicação da equipe e prototipação das interfaces.
+
+### Contribuições Pessoais
+
+No quinto semestre, concentrei grande parte da minha atuação no frontend, participando da estruturação da arquitetura da aplicação, definição de padrões de UI/UX e desenvolvimento de funcionalidades centrais. Trabalhei nos módulos de acompanhamento de projetos e compras, construção de dashboards e indicadores, análise de gastos e estoque, além da integração dessas interfaces com os dados disponibilizados pelo backend.
+
+Também participei diretamente do backend e do fluxo de dados do projeto. Desenvolvi scripts para geração de dados de teste e trabalhei no pipeline ETL responsável pelo processamento de informações de estoque, implementando etapas de transformação e carga para estruturas dimensionais do Data Warehouse. Essa experiência permitiu aplicar na prática conceitos de ETL, tabelas fato e dimensão e integração entre diferentes camadas da aplicação.
+
+Além do desenvolvimento, fiquei responsável pela área de documentação dentro da estrutura de DevOps da equipe, participando da organização e padronização da Wiki utilizada como base de conhecimento técnico. O objetivo era estabelecer uma documentação consistente dos processos, ambientes e práticas do projeto, reforçando a importância de tratar documentação, qualidade e operação como partes do ciclo de desenvolvimento do software.
+
+### Hard Skills
+
+- Modelagem dimensional com tabelas fato e dimensão: **Sei fazer com autonomia**;
+- Desenvolvimento de pipelines ETL com Python: **Sei fazer com ajuda**;
+- Desenvolvimento frontend com React e TypeScript: **Sei fazer com autonomia**;
+- Construção de dashboards e visualização de dados: **Sei fazer com autonomia**;
+- Desenvolvimento e integração com APIs utilizando Django: **Sei fazer com ajuda**;
+- Conteinerização e configuração de ambientes com Docker: **Sei fazer com autonomia**;
+- Documentação técnica e padronização de processos DevOps: **Sei fazer com autonomia**.
+
+### Soft Skills
+
+O quinto semestre ampliou minha visão sobre o desenvolvimento de software ao me aproximar das práticas de DevOps. Até então, grande parte da minha atenção estava concentrada na implementação das funcionalidades; nesse projeto, passei a enxergar com mais clareza tudo o que existe ao redor do código para que uma aplicação possa ser desenvolvida, documentada, monitorada e entregue de maneira consistente.
+
+Ficar responsável pela documentação das práticas de DevOps exigiu bastante **organização**, **comunicação** e **atenção aos detalhes**, pois era necessário transformar processos técnicos em informações claras e padronizadas para que toda a equipe pudesse consultá-las e reproduzi-las. Isso também fortaleceu minha **responsabilidade**, já que uma documentação incompleta ou desatualizada poderia impactar diretamente o trabalho dos demais integrantes.
+
+Esse contato desenvolveu principalmente meu **pensamento sistêmico**. Passei a avaliar uma solução não apenas pelo funcionamento de uma funcionalidade isolada, mas também pela integração entre serviços, qualidade do código, testes, monitoramento, ambiente e documentação. Foi um semestre importante para consolidar uma visão mais ampla sobre o ciclo de vida de um software e sobre a importância de construir processos que tornem o trabalho da equipe mais organizado, previsível e sustentável.
+
+---
+
+## :heavy_check_mark: 6º Semestre - 2026-2
+
+### Parceiro Acadêmico
+[X](https://www.tecsysbrasil.com.br/)
 
 ## Contatos
 * [GitHub](https://github.com/elbertjean)
