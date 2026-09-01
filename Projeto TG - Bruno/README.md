@@ -171,7 +171,7 @@ Esse cenário exigiu bastante **adaptação** e **aprendizado contínuo**, princ
 
 Também desenvolvi mais minha **colaboração em equipe**, já que muitas das funcionalidades dependiam diretamente do trabalho de outros integrantes. Construir uma tela, integrar dados e finalizar uma entrega exigia comunicação constante para entender o que já havia sido desenvolvido e como cada parte deveria se conectar.
 
-Foi um semestre importante para desenvolver **resiliência**, **responsabilidade com entregas** e maior segurança para enfrentar tecnologias desconhecidas. Mais do que aprender Java ou banco de dados relacional, comecei a entender na prática que desenvolver software também envolve saber lidar com incerteza, dependências entre pessoas e pressão de prazo.
+Foi um semestre importante para desenvolver **resiliência**, **responsabilidade com entregas** e maior segurança para enfrentar tecnologias desconhecidas. Uma situação em que precisei exercitar a resiliência foi durante o desenvolvimento do relatório BoxPlot: enfrentei dificuldades para integrar a interface em JavaFX com as consultas ao banco de dados utilizando JDBC. Como as ferramentas eram novas para mim, as primeiras tentativas de carregar as informações na tela resultaram em erros. Em vez de repassar a tarefa, persisti na investigação dos problemas, estudei materiais de apoio e realizei diversos testes até conseguir que os dados de cidades e estações fossem exibidos corretamente. Mais do que aprender as tecnologias, essa experiência me ensinou na prática como manter o foco e resolver problemas sob pressão de prazo e incertezas técnicas.
 
 ---
 
@@ -233,13 +233,11 @@ Nas etapas finais do projeto, também participei do desenvolvimento do fluxo de 
 
 ### Soft Skills
 
-O terceiro semestre foi marcado principalmente pelo aumento da **responsabilidade técnica**. A partir da segunda sprint, fiquei responsável por uma das partes centrais do projeto: o fluxo de web scraping utilizado para coletar e processar as notícias. Isso trouxe uma pressão diferente dos semestres anteriores, pois o funcionamento de grande parte da aplicação dependia diretamente dessa entrega.
+O terceiro semestre foi marcado pelo aumento da **responsabilidade técnica** e da capacidade de **lidar com pressão e prazos**. Uma situação que ilustra isso ocorreu a partir da segunda sprint, quando assumi o desenvolvimento do fluxo de web scraping, essencial para coletar e processar as notícias. Como o funcionamento de grande parte da aplicação dependia dessa entrega, a tarefa era construir uma solução funcional rapidamente utilizando o Jsoup, uma tecnologia até então nova para mim.
 
-Foi necessário desenvolver uma maior capacidade de **lidar com pressão e prazos**, mantendo o foco mesmo diante de uma funcionalidade que ainda envolvia tecnologias e conceitos novos para mim. Nesse processo, precisei aprender rapidamente o funcionamento do Jsoup, compreender suas possibilidades e limitações e transformar esse aprendizado em uma solução funcional dentro do período previsto pelas sprints.
+Para lidar com esse cenário, adaptei minha abordagem de aprendizado: em vez de esperar dominar completamente a biblioteca antes de escrever o código, passei a pesquisar problemas específicos, testar alternativas na prática e evoluir a implementação de forma iterativa. Enfrentei erros na extração de dados e limitações da ferramenta, mas mantive o foco em investigar soluções pontuais para não travar o trabalho dos meus colegas. 
 
-Essa experiência fortaleceu principalmente minha **autonomia**, **resolução de problemas** e **aprendizado contínuo**. Em vez de esperar dominar completamente uma tecnologia antes de utilizá-la, aprendi a pesquisar, testar alternativas, identificar erros e evoluir a implementação conforme o projeto avançava.
-
-Também desenvolvi um senso maior de **comprometimento com a entrega coletiva**, pois percebi de forma mais clara que uma responsabilidade individual poderia impactar diretamente todo o restante da equipe. Foi um semestre importante para aprender a assumir funcionalidades críticas, lidar com a pressão associada a elas e confiar mais na minha capacidade de aprender novas tecnologias em pouco tempo.
+Como resultado dessa postura, consegui entregar o motor de coleta dentro do prazo da sprint. Essa experiência garantiu o andamento do projeto e fortaleceu minha **autonomia**, **resolução de problemas** e **aprendizado contínuo**. Acima de tudo, me ensinou na prática o real significado do **comprometimento com a entrega coletiva**, mostrando como assumir e entregar uma funcionalidade crítica impacta o sucesso de toda a equipe.
 
 ---
 
@@ -307,11 +305,11 @@ Também participei da integração final dessas funcionalidades com o backend e 
 
 ### Soft Skills
 
-O quarto semestre aumentou ainda mais minha **responsabilidade técnica**, pois fiquei responsável por grande parte do fluxo principal do frontend. Uma das tarefas mais críticas foi a renderização e manipulação dos dados geoespaciais no mapa, exigindo atenção não apenas ao funcionamento das funcionalidades, mas também à **performance e otimização** da aplicação para que grandes volumes de informações pudessem ser apresentados sem comprometer a experiência do usuário.
+O quarto semestre exigiu um alto nível de **autonomia** e **organização** devido ao aumento da minha **responsabilidade técnica**. A situação central que demandou essas habilidades foi ter assumido grande parte do fluxo principal do frontend, especificamente o desenvolvimento das ferramentas de desenho, edição e renderização de grandes volumes de dados geoespaciais no mapa. Como diversas outras funcionalidades da equipe dependiam diretamente dessa entrega, a tarefa exigia garantir não apenas o funcionamento do recurso, mas uma excelente **performance e otimização**.
 
-Também fui responsável pelo desenvolvimento do fluxo de desenho e edição de polígonos diretamente sobre o mapa, uma funcionalidade essencial para o objetivo do projeto. Assumir novamente uma parte central da aplicação exigiu **autonomia**, **organização** e **tomada de decisão**, principalmente porque diversas outras funcionalidades dependiam diretamente desse fluxo para serem concluídas.
+Para lidar com esse desafio sob **pressão**, exerci uma forte **tomada de decisão**: antes de simplesmente implementar o código, dediquei tempo para avaliar diferentes alternativas de renderização e manipulação de estado. Foquei em otimizar o processamento para que o mapa permanecesse fluido mesmo com muitos polígonos, mantendo a equipe alinhada sobre as escolhas técnicas para que pudessem preparar suas integrações.
 
-O desafio técnico e a responsabilidade sobre essas entregas fortaleceram minha capacidade de **resolver problemas**, trabalhar sob **pressão** e avaliar alternativas antes de implementar uma solução. Foi também um semestre importante para amadurecer minha visão sobre desenvolvimento frontend, entendendo que uma funcionalidade não precisa apenas funcionar, mas também ser eficiente, escalável e adequada à experiência de quem utiliza o sistema.
+Como resultado, entreguei uma solução eficiente e escalável sem comprometer a experiência do usuário, destravando o trabalho da equipe. Esse cenário fortaleceu minha capacidade de **resolver problemas** complexos e amadureceu minha visão sobre o desenvolvimento frontend, provando na prática que uma entrega bem-sucedida vai muito além do código funcionar: ela precisa ser performática, escalável e focada na experiência de quem utiliza o sistema.
 
 ---
 
@@ -368,11 +366,11 @@ Além do desenvolvimento, fiquei responsável pela área de documentação dentr
 
 ### Soft Skills
 
-O quinto semestre ampliou minha visão sobre o desenvolvimento de software ao me aproximar das práticas de DevOps. Até então, grande parte da minha atenção estava concentrada na implementação das funcionalidades; nesse projeto, passei a enxergar com mais clareza tudo o que existe ao redor do código para que uma aplicação possa ser desenvolvida, documentada, monitorada e entregue de maneira consistente.
+O quinto semestre foi fundamental para desenvolver meu **pensamento sistêmico** e ampliar minha **responsabilidade** com o ciclo de vida do software. A situação que exigiu isso foi assumir a frente da **documentação** das práticas de DevOps: fui encarregado de estruturar e registrar os processos técnicos do projeto. A tarefa não era mais apenas codar funcionalidades isoladas, mas sim garantir, através dessa documentação, que a aplicação pudesse ser desenvolvida, monitorada e entregue de maneira consistente por qualquer integrante da equipe.
 
-Ficar responsável pela documentação das práticas de DevOps exigiu bastante **organização**, **comunicação** e **atenção aos detalhes**, pois era necessário transformar processos técnicos em informações claras e padronizadas para que toda a equipe pudesse consultá-las e reproduzi-las. Isso também fortaleceu minha **responsabilidade**, já que uma documentação incompleta ou desatualizada poderia impactar diretamente o trabalho dos demais integrantes.
+Para lidar com essa demanda, apliquei muita **organização**, **comunicação** e **atenção aos detalhes**. Em vez de apenas configurar os ambientes e guardar o conhecimento para mim, dediquei-me a mapear a integração entre os serviços e a transformar processos complexos de infraestrutura em documentações claras e padronizadas. Estruturei essas informações de forma didática para que toda a equipe pudesse consultá-las e reproduzi-las sem depender de suporte constante.
 
-Esse contato desenvolveu principalmente meu **pensamento sistêmico**. Passei a avaliar uma solução não apenas pelo funcionamento de uma funcionalidade isolada, mas também pela integração entre serviços, qualidade do código, testes, monitoramento, ambiente e documentação. Foi um semestre importante para consolidar uma visão mais ampla sobre o ciclo de vida de um software e sobre a importância de construir processos que tornem o trabalho da equipe mais organizado, previsível e sustentável.
+O resultado dessa ação foi uma equipe com muito mais autonomia para atuar nos processos de entrega. Pessoalmente, a experiência consolidou minha visão sistêmica: passei a avaliar uma solução não apenas pelo seu funcionamento isolado, mas considerando o ambiente, testes e qualidade, provando na prática que processos organizados tornam o trabalho de todos mais previsível e sustentável.
 
 ---
 
