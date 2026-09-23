@@ -16,8 +16,8 @@ class ItemsListCreateView(APIView):
         formatted_items = []
         for item in items:
             formatted_item = item.copy()
-            formatted_item['id'] = str(item['_id'])
-            del formatted_item['_id']
+            formatted_item['id'] = str(item['_id']) # 1. Transformamos o ObjectId em texto e salvamos na chave "id"
+            del formatted_item['_id']  # 2. Deletamos a chave "_id" original
             formatted_items.append(formatted_item)
             
         return Response(formatted_items, status=status.HTTP_200_OK)
@@ -65,7 +65,7 @@ class ItemDetailView(APIView):
         if 'id' in update_data:
             del update_data['id']
 
-        result = collection.update_one({"_id": object_id}, {"$set": update_data})
+        result = collection.replace_one({"_id": object_id}, update_data)
         
         if result.matched_count == 0:
             return Response({"error": "Item not found"}, status=status.HTTP_404_NOT_FOUND)

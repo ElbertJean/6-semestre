@@ -30,7 +30,11 @@ O banco de dados do projeto roda isolado em um contêiner Docker para facilitar.
    ```bash
    docker-compose up -d
    ```
-3. Com o banco online, inicie o servidor Python (Django) especificamente na porta 8001:
+3. Execute as migrações iniciais do Django:
+   ```bash
+   python manage.py migrate
+   ```
+4. Com o banco online, inicie o servidor Python (Django) especificamente na porta 8001:
    ```bash
    python manage.py runserver 8001
    ```
