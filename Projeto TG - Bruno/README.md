@@ -377,7 +377,93 @@ O resultado foi uma equipe com autonomia para atuar nos processos de entrega. Pe
 ## :heavy_check_mark: 6º Semestre - 2026-2
 
 ### Parceiro Acadêmico
-[X](https://www.tecsysbrasil.com.br/)
+[AKAER](https://www.akaer.com.br/)
+
+<details>
+<summary>Logotipo da AKAER</summary>
+<img src="./assets/6-semestre/akaer.png" alt="Logotipo da AKAER"><br/>
+<b>Figura 11: Logotipo da AKAER</b>
+</details>
+<br>
+
+No sexto semestre, o projeto foi desenvolvido em parceria com a AKAER, empresa brasileira especializada em engenharia de alta tecnologia, com atuação nos setores aeroespacial e de defesa. O desafio proposto consistia no desenvolvimento de uma solução para automatizar a classificação, organização e recuperação de documentos técnicos, reduzindo a necessidade de processos manuais e facilitando o acesso às informações.
+
+O gerenciamento desses documentos envolvia arquivos extensos e complexos, como manuais aeronáuticos, normas técnicas e relatórios de qualidade. A identificação de categorias, setores e etiquetas dependia da análise individual dos documentos, tornando o processo demorado e sujeito a inconsistências na catalogação.
+
+Com o IAzimute, a equipe SQLutions desenvolveu uma aplicação web voltada à gestão inteligente de documentos técnicos, utilizando técnicas de Machine Learning para classificação automática e bancos de dados relacionais e vetoriais para armazenamento e recuperação das informações. A plataforma permitia realizar o upload de documentos PDF, extrair seu conteúdo, identificar categorias e setores, gerenciar etiquetas e realizar buscas por filtros tradicionais ou similaridade semântica.
+
+O sistema foi desenvolvido utilizando Python e Django REST Framework no backend, React no frontend e PostgreSQL com a extensão pgvector para persistência dos dados. Para a classificação automática, foram utilizados modelos de Machine Learning baseados em TF-IDF e LinearSVC, enquanto a busca semântica utilizava embeddings vetoriais para identificar documentos relacionados ao contexto pesquisado.
+
+Este projeto representou uma evolução importante em relação aos semestres anteriores, principalmente pela introdução de conceitos de inteligência artificial, processamento de linguagem natural, bancos de dados vetoriais e segurança da informação. Além de trabalhar com modelagem relacional e desenvolvimento Full Stack, tivemos contato com pipelines de processamento de documentos, autenticação e autorização de usuários, testes automatizados e práticas de qualidade de software.
+
+<details>
+<summary>Identidade Visual do Projeto IAzimute</summary>
+<img src="./assets/6-semestre/iazimute_logo.svg" alt="Logotipo do Projeto IAzimute">
+<b>Figura 12: Identidade visual da solução IAzimute</b>
+</details>
+<br>
+
+A aplicação realizava a extração de texto dos documentos utilizando PyMuPDF e, quando necessário, Tesseract OCR para reconhecimento de conteúdo em páginas digitalizadas. Após o processamento, os textos eram classificados automaticamente e associados a etiquetas e setores, enquanto seus conteúdos eram convertidos em representações vetoriais para permitir consultas semânticas.
+
+Além da classificação, o sistema disponibilizava recursos para gerenciamento de documentos, edição de metadados, filtros combinados e visualização de arquivos PDF diretamente na interface. O controle de acesso era realizado por meio do Keycloak, considerando os perfis e setores dos usuários para restringir a visualização e manipulação de informações conforme suas permissões.
+
+### Tecnologias Utilizadas
+
+- **Python / Django REST Framework:** Utilizados no desenvolvimento do backend, implementação das regras de negócio, processamento dos documentos e construção das APIs REST.
+- **PostgreSQL / pgvector:** Responsáveis pela persistência dos dados relacionais e vetoriais, permitindo o armazenamento de documentos, etiquetas, metadados e a realização de buscas por similaridade semântica.
+- **Scikit-learn:** Biblioteca utilizada no treinamento e implementação do modelo de Machine Learning responsável pela classificação automática dos documentos utilizando TF-IDF e LinearSVC.
+- **PyMuPDF / Tesseract OCR:** Utilizados na extração e processamento de textos provenientes de documentos PDF, incluindo arquivos digitalizados.
+- **Ollama:** Utilizado para geração de embeddings vetoriais a partir do conteúdo dos documentos, permitindo a implementação das consultas semânticas.
+- **Keycloak:** Utilizado no gerenciamento da autenticação e autorização dos usuários, permitindo o controle de acesso conforme os perfis e setores cadastrados.
+- **React / Vite / Tailwind CSS:** Utilizados no desenvolvimento da interface web, construção de componentes reutilizáveis e padronização visual da aplicação.
+- **PDF.js:** Biblioteca utilizada para renderização e visualização dos documentos PDF diretamente na interface.
+- **Docker / Docker Compose:** Utilizados para conteinerização e configuração dos serviços necessários para execução da aplicação.
+- **Pytest / Vitest / React Testing Library:** Utilizados na implementação de testes unitários e de integração no backend e frontend.
+- **SonarCloud / SonarQube:** Utilizados para análise estática do código e acompanhamento dos critérios de qualidade da aplicação.
+- **Git / GitHub / GitHub Actions:** Utilizados para versionamento, colaboração entre os integrantes da equipe e automação dos processos de integração contínua.
+- **Jira / Slack / Figma:** Utilizados para gerenciamento das tarefas, comunicação da equipe e prototipação das interfaces.
+
+### Contribuições Pessoais
+
+No sexto semestre, tive uma atuação Full Stack, participando desde a modelagem inicial do banco de dados até o desenvolvimento de funcionalidades no backend e frontend. Minha principal contribuição esteve relacionada à implementação do fluxo de classificação automática de documentos utilizando Machine Learning, além da integração desse processo com os serviços da aplicação.
+
+Inicialmente, participei da estruturação do banco de dados relacional, trabalhando na definição das entidades de documentos, etiquetas e seus relacionamentos. Em seguida, fiquei responsável pela pesquisa e desenvolvimento do modelo de classificação automática, realizando experimentos no Google Colab com documentos técnicos e utilizando técnicas de processamento de linguagem natural, como TF-IDF e LinearSVC, para identificar categorias e setores a partir do conteúdo textual.
+
+Após o desenvolvimento do modelo, implementei sua integração com o backend em Django, estruturando o serviço responsável pelo processamento dos documentos. Desenvolvi o fluxo de extração de texto utilizando PyMuPDF e Tesseract OCR, permitindo que a aplicação processasse tanto documentos digitais quanto arquivos digitalizados. Também implementei validações de arquivos, tratamento de exceções e mecanismos para lidar com documentos que não pudessem ser classificados automaticamente.
+
+Além desse fluxo, participei da implementação de funcionalidades de gerenciamento de etiquetas e filtros avançados de pesquisa, integrando consultas aos metadados relacionais com buscas semânticas realizadas por meio do pgvector. Também contribuí com o controle de acesso aos documentos, disponibilizando informações sobre as permissões dos usuários para utilização no frontend.
+
+No frontend, desenvolvi funcionalidades utilizando React e Tailwind CSS, incluindo o modal de cadastro de documentos com suporte a drag-and-drop, validação de campos e feedback visual das operações. Também implementei recursos de edição de documentos, integração dos filtros de pesquisa e indicadores visuais para identificar arquivos com acesso restrito, conectando essas interfaces aos endpoints disponibilizados pelo backend.
+
+Por fim, participei diretamente da implementação de testes automatizados no backend e frontend, utilizando Pytest, Vitest e React Testing Library. Trabalhei na validação de funcionalidades relacionadas ao processamento, classificação, cadastro e edição de documentos, além de ajustes para atender aos critérios de qualidade definidos no SonarCloud.
+
+Esse semestre consolidou minha experiência com desenvolvimento Full Stack e ampliou minha compreensão sobre a aplicação de inteligência artificial em problemas reais. Além de construir interfaces e APIs, precisei compreender como dados não estruturados poderiam ser processados, classificados, armazenados e recuperados de maneira eficiente, integrando diferentes tecnologias em uma única solução.
+
+### Hard Skills
+
+- Pesquisa e treinamento de modelos de Machine Learning utilizando Scikit-learn, TF-IDF e LinearSVC: **Sei fazer com autonomia**;
+- Extração e processamento de textos em documentos PDF utilizando PyMuPDF e Tesseract OCR: **Sei fazer com autonomia**;
+- Desenvolvimento backend com Python e Django REST Framework: **Sei fazer com autonomia**;
+- Modelagem e manipulação de dados relacionais com PostgreSQL: **Sei fazer com autonomia**;
+- Integração e consultas semânticas utilizando PostgreSQL e pgvector: **Sei fazer com autonomia**;
+- Desenvolvimento frontend com React e Tailwind CSS: **Sei fazer com autonomia**;
+- Integração entre frontend e backend através de APIs REST: **Sei fazer com autonomia**;
+- Implementação de autenticação e controle de acesso utilizando Keycloak: **Sei fazer com autonomia**;
+- Desenvolvimento de testes automatizados com Pytest, Vitest e React Testing Library: **Sei fazer com autonomia**;
+- Conteinerização e configuração de ambientes utilizando Docker e Docker Compose: **Sei fazer com autonomia**;
+- Análise estática de código e utilização de ferramentas de qualidade como SonarCloud: **Sei fazer com autonomia**.
+
+### Soft Skills
+
+O sexto semestre exigiu que eu trabalhasse com tecnologias e conceitos que ainda não dominava, principalmente Machine Learning, processamento de linguagem natural e bancos de dados vetoriais. Como fiquei responsável por uma parte importante do fluxo de classificação automática de documentos, precisei exercitar minha **autonomia** e capacidade de **aprendizado contínuo**, pesquisando diferentes abordagens, desenvolvendo provas de conceito e realizando testes até encontrar uma solução que pudesse ser integrada ao restante da aplicação.
+
+Durante a implementação, enfrentei dificuldades relacionadas à extração de textos de documentos digitalizados, integração do modelo de classificação com o backend e combinação de diferentes estratégias de busca. Essas situações exigiram **resiliência** e **resolução de problemas**, pois precisei investigar erros, avaliar alternativas e implementar mecanismos de tratamento para evitar que falhas no processamento comprometessem o funcionamento das demais funcionalidades.
+
+Atuar simultaneamente no backend e frontend também fortaleceu minha **comunicação** e **colaboração em equipe**. Como as funcionalidades de classificação, pesquisa e controle de acesso estavam diretamente relacionadas às interfaces utilizadas pelos usuários, precisei manter alinhamento constante com os demais integrantes para garantir que os dados e as regras de negócio fossem interpretados corretamente em cada camada da aplicação.
+
+Além disso, a implementação dos testes automatizados e o acompanhamento dos critérios de qualidade reforçaram minha **responsabilidade técnica** e **atenção aos detalhes**. Compreendi que entregar uma funcionalidade não significa apenas fazê-la funcionar, mas também garantir que ela seja confiável, testável e possa ser mantida por outros desenvolvedores. Essa experiência consolidou minha visão sobre o desenvolvimento de software como um processo integrado, envolvendo pesquisa, planejamento, implementação, validação e trabalho coletivo.
+
+---
 
 ## Contatos
 * [GitHub](https://github.com/elbertjean)
